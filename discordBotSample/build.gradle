@@ -13,9 +13,12 @@ repositories {
         name 'm2-dv8tion'
         url 'https://m2.dv8tion.net/releases'
     }
+    jcenter()
 }
 
 dependencies {
+    implementation 'net.coobird:thumbnailator:0.4.3'
+    implementation 'com.jagrosh:jda-utilities:3.0.5'
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     implementation("net.dv8tion:JDA:4.4.0_350")
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
@@ -25,3 +28,5 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+apply plugin: 'java'

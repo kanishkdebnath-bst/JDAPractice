@@ -26,5 +26,11 @@ class HelloEvents : ListenerAdapter() {
                 println("hi")
             }
         }
+
+        for (index in messageTokens.indices) {
+            if(event.member?.user?.isBot == false) {
+                event.channel.sendMessage("word #$index is " + messageTokens[index]).queue()
+            }
+        }
     }
 }
