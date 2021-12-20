@@ -5,7 +5,7 @@ import commands.*
 import net.dv8tion.jda.api.JDABuilder
 
 fun main() {
-    val jda = JDABuilder.createDefault("OTE3NDI0NDc3MTAzNTg3MzI5.Ya4gIA.WpCu2A36jJzj8bSJeFnOus2viik").build()
+    val jda = JDABuilder.createDefault().build()
 
 //    jda.addEventListener(HelloEvents())
 //    jda.addEventListener(CategoryEvents())
